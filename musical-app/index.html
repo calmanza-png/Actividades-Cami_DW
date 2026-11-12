@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--DOCTYPE es una sentencia que indica qu voy a trabajar con un 
+<documento de HTML-->
+
+<html lang="es"> <!-- Aqui inicia mi pagina con la etiqueta de html-->
+<head><!-- Aqui en el head esta todo lo que no es visible en la pagina, pero lo hace funcional -->
+   <!-- Con los metadatos puedo colocar caracteres especiales, dar informacion al SEO para pocicionamiento web-->
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
 <title>Musical Cami</title>
 </head>
 <body>
 
-<h1>Musical Cami</h1>
-<p>Escucha mis 3 canciones de POP</p>
+<div class="container-musical">
+    <img src="Mon-Laferte.jpeg" alt="Musical Cami" class="imagen-portada">
 
+    <h1>Musical Cami</h1>
+    <p class="pmusical">Las mejores canciones de Mon Laferte</p>
+
+    <div class="lista-canciones">
+        <!-- CANCION 1-->
+            <div class="cancion1">
+                <p>1. Tu falta de querer 🥀</p>
+                  <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Tu Falta De Querer.mp3" type="audio/mpeg">
+                </audio>
+                
+            </div>
+
+             <!-- CANCION 2-->
+            <div class="cancion2">
+                <p>2. Tormento 🍷</p>
+                  <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Tormento.mp3" type="audio/mpeg">
+                </audio>
+                
+            </div>
+
+             <!-- CANCION 3-->
+            <div class="cancion3">
+                <p>3. Si Tú Me Quisieras ❤️‍🩹</p>
+                  <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Si Tú Me Quisieras.mp3" type="audio/mpeg">
+                </audio>
+                
+            </div>
+
+            
+
+            
+        </div>
+        </div>
 </body>
 </html>
